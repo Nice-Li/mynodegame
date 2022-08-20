@@ -1,0 +1,182 @@
+*{
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+body{
+  background-color: var(--page-background)!important;
+  color:var(--text-color)!important;
+  min-height:100vh;
+}
+
+
+
+:root {
+  --accent-color: #009688;
+  --page-background: #fff;
+  --header-background: #fff;
+  --header-text-color: var(--text-color);
+  --text-color: #000;
+  --link-color: var(--accent-color);
+  --sidebar-width: 280px;
+  --sidebar-background: var(--page-background);
+  --sidebar-link-color: #444;
+  --sidebar-link-active-color: #000;
+  --sidebar-link-arrow-color: #999;
+  --main-background: var(--page-background);
+  --border-color: #eaeaea;
+  --header-height: 55px;
+  --code-font: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  --tip-color: rgb(6, 125, 247);
+  --success-color: #42b983;
+  --warning-color: #ff9800;
+  --danger-color: rgb(255, 0, 31);
+  --nav-link-color: #2c3e50;
+  --nav-link-border-color: var(--accent-color);
+  --code-block-background: #011627;
+  --code-block-text-color: white;
+  --code-block-shadow-color: #333;
+  --code-block-shadow-width: 0px;
+  --highlighted-line-background: #022a4b;
+  --highlighted-line-border-color: #ffa7c4;
+  --inline-code-color: rgb(116, 66, 16);
+  --inline-code-background: rgb(254, 252, 191);
+  --loader-primary-color: #f3f3f3;
+  --loader-secondary-color: #ecebeb;
+  --table-header-background: #fafafa;
+  --table-header-color: #666;
+  --docute-select-height: 38px;
+  --search-icon-color: #999;
+  --search-focus-border-color: #ccc;
+  --search-focus-icon-color: #333;
+  --search-result-hover-background: #f9f9f9;
+}
+:root.dark {
+    --accent-color: #009688;
+    --page-background: #2f3136;
+    --header-background: var(--page-background);
+    --header-text-color: var(--text-color);
+    --text-color: hsla(0, 0%, 100%, 0.88);
+    --link-color: var(--accent-color);
+    --sidebar-width: 280px;
+    --sidebar-background: var(--page-background);
+    --sidebar-link-color: var(--text-color);
+    --sidebar-link-active-color: var(--text-color);
+    --sidebar-link-arrow-color: #999;
+    --main-background: var(--page-background);
+    --border-color: #3e4147;
+    --header-height: 55px;
+    --code-font: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+    --tip-color: rgb(6, 125, 247);
+    --success-color: #42b983;
+    --warning-color: #ff9800;
+    --danger-color: rgb(255, 0, 31);
+    --nav-link-color: var(--text-color);
+    --nav-link-border-color: var(--accent-color);
+    --code-block-background: #011627;
+    --code-block-text-color: white;
+    --code-block-shadow-color: #333;
+    --code-block-shadow-width: 0px;
+    --highlighted-line-background: #022a4b;
+    --highlighted-line-border-color: #ffa7c4;
+    --inline-code-color: #e6e6e6;
+    --inline-code-background: #373c49;
+    --loader-primary-color: hsla(0, 0%, 100%, 0.08);
+    --loader-secondary-color: hsla(0, 0%, 100%, 0.18);
+    --table-header-background: var(--border-color);
+    --table-header-color: #868686;
+    --docute-select-height: 38px;
+    --search-icon-color: #999;
+    --search-focus-border-color: #999;
+    --search-focus-icon-color: #ccc;
+    --search-result-hover-background: #1e2025;
+    --content-link-border: 2px solid hsla(0, 0%, 100%, 0.28);
+    --content-link-hover-border-color: currentColor;
+    --search-result-background: #27292f;
+  }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #009688;
+    --page-background: #2f3136;
+    --header-background: var(--page-background);
+    --header-text-color: var(--text-color);
+    --text-color: hsla(0, 0%, 100%, 0.88);
+    --link-color: var(--accent-color);
+    --sidebar-width: 280px;
+    --sidebar-background: var(--page-background);
+    --sidebar-link-color: var(--text-color);
+    --sidebar-link-active-color: var(--text-color);
+    --sidebar-link-arrow-color: #999;
+    --main-background: var(--page-background);
+    --border-color: #3e4147;
+    --header-height: 55px;
+    --code-font: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+    --tip-color: rgb(6, 125, 247);
+    --success-color: #42b983;
+    --warning-color: #ff9800;
+    --danger-color: rgb(255, 0, 31);
+    --nav-link-color: var(--text-color);
+    --nav-link-border-color: var(--accent-color);
+    --code-block-background: #011627;
+    --code-block-text-color: white;
+    --code-block-shadow-color: #333;
+    --code-block-shadow-width: 0px;
+    --highlighted-line-background: #022a4b;
+    --highlighted-line-border-color: #ffa7c4;
+    --inline-code-color: #e6e6e6;
+    --inline-code-background: #373c49;
+    --loader-primary-color: hsla(0, 0%, 100%, 0.08);
+    --loader-secondary-color: hsla(0, 0%, 100%, 0.18);
+    --table-header-background: var(--border-color);
+    --table-header-color: #868686;
+    --docute-select-height: 38px;
+    --search-icon-color: #999;
+    --search-focus-border-color: #999;
+    --search-focus-icon-color: #ccc;
+    --search-result-hover-background: #1e2025;
+    --content-link-border: 2px solid hsla(0, 0%, 100%, 0.28);
+    --content-link-hover-border-color: currentColor;
+    --search-result-background: #27292f;
+  }
+
+  :root.light {
+    --accent-color: #009688;
+    --page-background: #fff;
+    --header-background: #fff;
+    --header-text-color: var(--text-color);
+    --text-color: #000;
+    --link-color: var(--accent-color);
+    --sidebar-width: 280px;
+    --sidebar-background: var(--page-background);
+    --sidebar-link-color: #444;
+    --sidebar-link-active-color: #000;
+    --sidebar-link-arrow-color: #999;
+    --main-background: var(--page-background);
+    --border-color: #eaeaea;
+    --header-height: 55px;
+    --code-font: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+    --tip-color: rgb(6, 125, 247);
+    --success-color: #42b983;
+    --warning-color: #ff9800;
+    --danger-color: rgb(255, 0, 31);
+    --nav-link-color: #2c3e50;
+    --nav-link-border-color: var(--accent-color);
+    --code-block-background: #011627;
+    --code-block-text-color: white;
+    --code-block-shadow-color: #333;
+    --code-block-shadow-width: 0px;
+    --highlighted-line-background: #022a4b;
+    --highlighted-line-border-color: #ffa7c4;
+    --inline-code-color: rgb(116, 66, 16);
+    --inline-code-background: rgb(254, 252, 191);
+    --loader-primary-color: #f3f3f3;
+    --loader-secondary-color: #ecebeb;
+    --table-header-background: #fafafa;
+    --table-header-color: #666;
+    --docute-select-height: 38px;
+    --search-icon-color: #999;
+    --search-focus-border-color: #ccc;
+    --search-focus-icon-color: #333;
+    --search-result-hover-background: #f9f9f9;
+  }
+}

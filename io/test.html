@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" name="" id="inp">
+  <button id="btn">click</button>
+  <p id="test"></p>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+
+  <script>
+    
+    let str = null,
+      url='http://localhost:8080/socket.io/?EIO=3&transport=polling'
+
+    // async function getSId(url){
+    //   let res = await axios.get(url)
+
+    //   str = res.data.split('{')[1].split('}')[0].split(',')[0].split(':')[1].split('"')[1]
+    //   return str
+    // }
+    // getSId(url).then(val=>{
+    //   console.log(val)
+      const socket = io('http://localhost:8080',{
+        transprots:['webscoket'],
+      
+      });
+      
+      
+      socket.on('connect', function(){  
+        console.log('链接上了');
+      });
+
+      btn.onclick = function(){
+        socket.emit('test1', {a:inp.value})
+
+      }
+      socket.on('getA', data=>{
+        test.innerText = data.a;
+      })
+    // })
+
+    
+  </script>
+</body>
+</html>

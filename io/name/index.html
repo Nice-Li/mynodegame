@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dark2.css">
+  <link rel="stylesheet" href="base.css">
+  <style>
+    
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <label for="inputName">
+    键入名字格式。如：李某某，请输入：李xx
+  </label>
+  <input type="text" id="inputName" name="inputName" placeholder="如：李某某，请输入：李xx">
+ 
+
+  <button id="createBtn">生成名字</button>
+  <ul id="nameBox">
+
+  </ul>
+  <script src="./firstName.js"></script>
+  <script src="./lastNameList.js"></script>
+  <script src="./index.js"></script>
+  <script>
+    let nameBox = document.getElementById('nameBox')
+    let inputName = document.getElementById('inputName')
+    let createBtn = document.getElementById('createBtn')
+
+
+
+    createBtn.onclick = debanuce(showOnPage)
+    
+    
+    function showOnPage(){
+      let val = inputName.value.trim()
+      let num = 100
+      
+      nameBox.innerHTML = showRomdonNameList(createRandomNameList(num, val))
+
+    }
+
+
+
+
+  </script>
+</body>
+</html>
