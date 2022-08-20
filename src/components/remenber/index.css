@@ -1,0 +1,18 @@
+.rem-box{
+  width:100%;
+  margin:0 5px;
+  overflow: auto;
+  text-align:left;
+}
+.rem-box > p{
+  margin:1px 2px;
+  font-size:20px;
+}
+
+.rem-box > p> .event-name{
+  font-weight:bold;
+  color:#282c34;
+}
+.rem-box > p> .event-name.NC1-text{
+    color:#d8435e;
+}

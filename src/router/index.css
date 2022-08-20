@@ -1,0 +1,20 @@
+
+
+.link-bg{
+  background-color:rgb(38,157,128);
+  text-align:left;
+}
+
+.btn-link{
+  color:#eee;
+
+  /* font-size:1.8rem; */
+  font-size:24px;
+  margin:0 15px;
+  text-decoration: none;
+}
+.btn-link.active{
+  color:black;
+  font-size:26px;
+  /* font-size:2rem; */
+}

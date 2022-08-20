@@ -1,0 +1,44 @@
+.number-show{
+  color:black;
+  font-size:10rem;
+  margin:10px auto;
+  border-bottom:1px dashed black;
+}
+
+.btn-box{
+  position: fixed;
+  bottom:0px;
+  display:flex;
+  z-index:100;
+  width:100%;
+  text-align: center;
+}
+.btn-click{
+  flex:1;
+  background-color: #fff;
+  height:40px;
+  border-radius:4px;
+  border:1px solid #aaa;
+}
+.btn-click:nth-of-type(1){
+  border-right:none;
+}
+.btn-box>button {
+  width: 25%;
+  box-sizing: border-box;
+  height: 50px;
+  color: #000;
+  font-size: 16px;
+  line-height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(72, 184, 156);
+
+
+}
+
+.btn-box>button:hover {
+  background-color: rgb(38,157,128);
+
+}
